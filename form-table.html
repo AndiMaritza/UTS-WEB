@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form-table.css">
+    <title>OW Organics - Products</title>
+</head>
+<body>
+    <header>
+        <div class="top-bar">FREE SHIPPING ON ALL ORDERS OVER $99</div>
+        <nav class="navbar">
+            <div class="logo">OW ORGANICS</div>
+            <ul class="nav-links">
+                <li><a href="Landing page.html">HOME</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="form-table.html">PRODUCTS</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Product List</h1>
+        
+        <!-- Pencarian Produk -->
+        <input type="text" id="search-bar" placeholder="Search products...">
+        
+        <!-- Filter Kategori -->
+        <select id="category-filter">
+            <option value="all">All Categories</option>
+            <option value="skincare">Skincare</option>
+            <option value="haircare">Haircare</option>
+            <option value="bodycare">Bodycare</option>
+        </select>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Image</th>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="moisturizer.jpg" alt="Moisturizer" class="product-image"></td>
+                    <td>Moisturizer</td>
+                    <td>$29.99</td>
+                    <td>Hydrating moisturizer for all skin types.</td>
+                    <td>
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="body_scrub.jpg" alt="Body Scrub" class="product-image"></td>
+                    <td>Body Scrub</td>
+                    <td>$19.99</td>
+                    <td>Exfoliating scrub for soft, smooth skin.</td>
+                    <td>
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+            </tbody>            
+        </table>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <a href="#" class="page-link">1</a>
+            <a href="#" class="page-link">2</a>
+            <a href="#" class="page-link">3</a>
+        </div>
+        
+        <section class="add-product-section">
+            <h2>Add New Product</h2>
+            <form id="add-product-form">
+                <div class="form-group">
+                    <label for="product-name">Product Name:</label>
+                    <input type="text" id="product-name" name="product-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price:</label>
+                    <input type="number" id="price" name="price" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="edit-btn">Add Product</button>
+                </div>
+            </form>
+        </section>        
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 OW Organics. All rights reserved.</p>
+    </footer>
+</body>
+</html>
